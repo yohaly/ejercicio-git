@@ -4,3 +4,4 @@ https://github.com/yohaly/ejercicio-git/blob/master/segundoejercicio_sql.sql
 https://github.com/yohaly/ejercicio-git/blob/master/1POO.pdf
 https://github.com/yohaly/ejercicio-git/blob/master/primerSQL.pdf
 https://github.com/yohaly/ejercicio-git/blob/master/1POO%20(corregido).pdf
+https://github.com/yohaly/ejercicio-git/blob/master/2.segundo%20ejercicio%20POO.pdf
