@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio JavaScript</title>
+</head>
+<body>
+
+		<script>
+			
+			let nombre = ["y", "o", "h", "a", "l", "y"];
+
+			let vocales = ["a", "e", "i", "o", "u"];
+			
+
+			// FASE 1 ______________________________________________________________________________
+
+			for(let i = 0; i<nombre.length; i++){
+				console.log(nombre[i]);
+			}
+
+			//for(let i = 0; i<apellido.length; i++){
+			//	console.log(nombre[i]);
+			//}
+			//___________________________________________________
+			
+
+			//FASE 2 ______________________________________________
+
+			for (let i = 0; i<nombre.length; i++){
+				 if(!isNaN(nombre[i])){
+       				console.log("Los nombres personales no contienen números");
+				} else if (esVocal(nombre [i])){
+					console.log(nombre [i] + " Es Vocal");
+				} else {
+					console.log(nombre [i] +" Es Consonante");
+				}
+			}
+
+			
+			function esVocal(letra){
+				letra = letra.toLowerCase();
+
+				return letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u";
+
+			}
+			//________________________________________________________________________________________
+
+
+			// FASE 3 _______________________________________________________________________________
+			let myMap = new Map();
+
+				for(var i = 0; i < nombre.length; i++){
+				    if(myMap.has(nombre[i])){
+				        myMap.set(nombre[i], myMap.get(nombre[i]) + 1);
+				    }else{
+				        myMap.set(nombre[i], 1);
+				    }
+				}
+				console.log(myMap);
+			//______________________________________________________________________________________
+
+			// FASE 4 _______________________________________________________________________________
+
+			var nomCompleto = [];
+
+			var apellido = ["z", "e", "r", "p", "a"];
+
+			nomCompleto.push(...nombre," ",...apellido);
+
+			console.log(nomCompleto);
+
+		</script>
+	
+</body>
+</html>
